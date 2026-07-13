@@ -10,4 +10,5 @@ function showPage(name) {
 }
 
 navItems.forEach((item) => item.addEventListener('click', () => showPage(item.dataset.page)));
+document.querySelectorAll('[data-jump]').forEach((item) => item.addEventListener('click', () => showPage(item.dataset.jump)));
 document.querySelector('.mobile-menu')?.addEventListener('click', () => sidebar.classList.toggle('open'));
