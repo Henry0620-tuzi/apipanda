@@ -3,73 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="一个基于 Sub2API 的公开 AI API 中转站项目介绍页。" />
-    <title>ApiPanda · 合规、透明的 AI API 中转服务</title>
+    <meta name="description" content="ApiPanda：一个基于 Sub2API、公开透明建设中的 AI API 接入服务。" />
+    <meta name="theme-color" content="#2fba70" />
+    <title>ApiPanda · 让 AI API 接入更简单</title>
+    <link rel="icon" href="apipanda-mark.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="ApiPanda 首页">
-        <span class="brand-mark"><i></i><i></i><i></i></span>
-        <span>ApiPanda</span>
-      </a>
+    <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
+    <header class="site-header shell">
+      <a class="brand" href="#top" aria-label="ApiPanda 首页"><img src="apipanda-mark.svg" alt="" /><span>Api<span>Panda</span></span></a>
       <nav class="nav-links" aria-label="主导航">
-        <a href="#about">项目介绍</a>
-        <a href="#roadmap">路线图</a>
-        <a href="#faq">常见问题</a>
-        <a class="nav-button" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="#about">项目介绍</a><a href="#features">服务特点</a><a href="#roadmap">建设路线</a><a href="#faq">常见问题</a>
       </nav>
+      <a class="header-button" href="https://github.com/Henry0620-tuzi/apipanda" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
       <button class="menu-button" aria-label="打开菜单" aria-expanded="false">☰</button>
     </header>
 
     <main id="top">
       <section class="hero shell">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span>建设中 · Coming soon</p>
-          <h1>让 AI API<br /><em>更简单地接入。</em></h1>
-          <p class="hero-text">一个基于 Sub2API 的公开 API 中转站计划。先公开信息与进展，待基础设施、域名和合规上游准备完成后，再开放实际服务。</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#roadmap">查看建设路线 <span>↓</span></a>
-            <a class="button button-quiet" href="https://github.com/" target="_blank" rel="noreferrer">关注 GitHub <span>↗</span></a>
-          </div>
-          <div class="hero-note"><span>⌁</span> 目前没有开放 API 调用，也不会收集用户密钥。</div>
+        <div class="hero-copy reveal">
+          <div class="status-pill"><i></i> 公开建设中 · 暂未开放 API</div>
+          <h1>让 AI API<br />接入更<span>简单。</span></h1>
+          <p>ApiPanda 是一个基于 Sub2API 的公开 API 中转站计划。我们会先完成域名、服务器和合规上游准备，再稳妥开放服务。</p>
+          <div class="hero-actions"><a class="button primary" href="#roadmap">查看建设进度 <span>→</span></a><a class="button secondary" href="#about">了解项目</a></div>
+          <div class="trust-row"><span>✓ 公开透明</span><span>✓ 合规优先</span><span>✓ 清晰计量</span></div>
         </div>
-        <div class="hero-visual" aria-label="API 请求流程示意图">
-          <div class="orb orb-one"></div>
-          <div class="orb orb-two"></div>
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="signal signal-one"><span>client</span><b>→</b></div>
-          <div class="signal signal-two"><span>gateway</span><b>→</b></div>
-          <div class="signal signal-three"><span>model</span><b>✓</b></div>
-          <div class="core"><span class="core-icon">✦</span><small>OPEN<br />RELAY</small></div>
+        <div class="hero-art reveal">
+          <span class="leaf leaf-a">◆</span><span class="leaf leaf-b">◆</span><span class="cloud cloud-a"></span><span class="cloud cloud-b"></span>
+          <div class="panda-halo"></div><img class="hero-panda" src="apipanda-mark.svg" alt="ApiPanda 熊猫品牌图标" />
+          <div class="float-card card-status"><b><i></i> SYSTEM</b><span>准备中</span></div>
+          <div class="float-card card-route"><b>统一接口</b><span>OpenAI Compatible</span></div>
         </div>
       </section>
 
-      <section class="ticker"><div class="ticker-inner"><span>SUB2API</span><span>OPEN SOURCE</span><span>API GATEWAY</span><span>TRANSPARENT BUILD</span><span>SUB2API</span><span>OPEN SOURCE</span></div></section>
+      <section id="features" class="feature-cards shell">
+        <article><span class="feature-icon green">⌘</span><div><h3>统一接入</h3><p>熟悉的兼容格式，减少应用适配成本。</p></div></article>
+        <article><span class="feature-icon blue">▣</span><div><h3>公开透明</h3><p>建设状态、使用规则和服务变化清晰可见。</p></div></article>
+        <article><span class="feature-icon orange">◇</span><div><h3>清晰计量</h3><p>正式开放前明确额度、价格与异常处理。</p></div></article>
+        <article><span class="feature-icon purple">♙</span><div><h3>安全合规</h3><p>先确认供应商授权，再开放实际服务。</p></div></article>
+      </section>
 
       <section id="about" class="section shell">
-        <div class="section-intro"><p class="eyebrow">01 / 项目介绍</p><h2>先把事情<br /><span>讲清楚。</span></h2></div>
-        <div class="about-content"><p class="lead">ApiPanda 不是一个“匿名、无限、无门槛”的免费接口。我们计划建立的是一个公开透明、可持续运营的 AI API 接入层。</p><p>底层使用开源的 Sub2API 项目，统一不同模型供应商的调用方式。服务正式上线前，会先完成供应商授权、成本核算、风控和数据保护设计。</p><div class="about-line"><span>01</span><b>公开进展</b><span>不隐藏建设状态</span></div><div class="about-line"><span>02</span><b>合规优先</b><span>先确认授权，再开放服务</span></div><div class="about-line"><span>03</span><b>用户可控</b><span>额度、密钥与调用记录清晰可见</span></div></div>
+        <div class="section-heading"><p class="eyebrow">ABOUT APIPANDA</p><h2>认真做好每一次<br /><span>API 请求。</span></h2><p>不是“匿名、无限、无门槛”的接口，而是一个希望长期稳定运营、规则清楚、用户可控的 AI API 接入层。</p></div>
+        <div class="about-panel">
+          <div class="about-visual"><img src="apipanda-mark.svg" alt="" /><div><b>ApiPanda</b><span>Built on Sub2API</span></div></div>
+          <div class="principles"><article><span>01</span><div><h3>公开进展</h3><p>不隐藏建设状态，重要变化持续同步。</p></div></article><article><span>02</span><div><h3>合规优先</h3><p>确认供应商授权、服务条款与数据保护设计。</p></div></article><article><span>03</span><div><h3>用户可控</h3><p>额度、密钥、调用记录和异常情况清晰可查。</p></div></article></div>
+        </div>
       </section>
 
-      <section class="feature-band"><div class="shell feature-grid"><article><span class="feature-number">01</span><h3>一个接口</h3><p>用熟悉的 OpenAI 兼容格式接入，减少客户端适配成本。</p></article><article><span class="feature-number">02</span><h3>清晰计量</h3><p>在开放服务前明确额度、价格、有效期和异常处理规则。</p></article><article><span class="feature-number">03</span><h3>可持续性</h3><p>通过限流、监控和备份，让公开服务具备长期运行的基础。</p></article></div></section>
-
-      <section id="roadmap" class="section shell roadmap-section">
-        <div class="section-intro"><p class="eyebrow">02 / 建设路线</p><h2>一步一步，<br /><span>再上线。</span></h2></div>
-        <div class="roadmap"><div class="roadmap-item done"><span class="roadmap-state">已完成</span><div><h3>公开项目定位</h3><p>确定基于 Sub2API，先搭建公开信息站点。</p></div></div><div class="roadmap-item active"><span class="roadmap-state">进行中</span><div><h3>准备基础设施</h3><p>域名、VPS、HTTPS、数据库、缓存和备份方案。</p></div></div><div class="roadmap-item"><span class="roadmap-state">待开始</span><div><h3>确认合规上游</h3><p>确认供应商授权、服务条款、成本和稳定性。</p></div></div><div class="roadmap-item"><span class="roadmap-state">待开始</span><div><h3>小范围测试</h3><p>验证计费、限流、流式响应、故障切换与数据安全。</p></div></div><div class="roadmap-item"><span class="roadmap-state">待开始</span><div><h3>公开服务</h3><p>完成验收后开放注册，并持续公开维护状态。</p></div></div></div>
+      <section id="roadmap" class="roadmap-wrap">
+        <div class="shell"><div class="center-heading"><p class="eyebrow">OUR ROADMAP</p><h2>一步一步，准备好再上线</h2><p>当前仅提供静态介绍页面，不收集密钥，也没有开放 API 调用。</p></div>
+          <div class="roadmap-grid">
+            <article class="done"><div class="step-top"><span>01</span><i>✓</i></div><h3>公开项目定位</h3><p>确定基于 Sub2API，完成品牌和介绍站。</p><b>已完成</b></article>
+            <article class="active"><div class="step-top"><span>02</span><i>•••</i></div><h3>准备基础设施</h3><p>域名、VPS、HTTPS、数据库与备份方案。</p><b>进行中</b></article>
+            <article><div class="step-top"><span>03</span><i>○</i></div><h3>确认合规上游</h3><p>确认授权、服务条款、成本和稳定性。</p><b>待开始</b></article>
+            <article><div class="step-top"><span>04</span><i>○</i></div><h3>测试与开放</h3><p>验证计费、限流与故障切换后开放注册。</p><b>待开始</b></article>
+          </div>
+        </div>
       </section>
 
-      <section class="quote-section"><div class="shell quote"><span class="quote-mark">“</span><blockquote>真正可靠的 API 中转站，首先应该让用户知道它如何运行、由谁维护，以及出了问题怎么办。</blockquote><p>— ApiPanda 建设原则</p></div></section>
+      <section id="faq" class="section faq-section shell">
+        <div class="section-heading"><p class="eyebrow">FAQ</p><h2>你可能想知道的事</h2><p>关于 ApiPanda 当前阶段和未来计划的简要说明。</p></div>
+        <div class="faq-list">
+          <details open><summary>现在可以注册或调用 API 吗？<span>＋</span></summary><p>还不可以。当前只是项目介绍和建设进度页，没有开放 API，也不会要求你提交任何上游密钥。</p></details>
+          <details><summary>为什么要先准备域名、VPS 和上游？<span>＋</span></summary><p>它们分别关系到稳定访问、服务运行和合法授权。准备完整后再部署，才能更可靠地提供服务。</p></details>
+          <details><summary>以后会支持哪些模型？<span>＋</span></summary><p>最终以获得合法授权、成本可控且稳定可用的供应商为准，不会在授权不明确时提供模型。</p></details>
+          <details><summary>如何关注项目进展？<span>＋</span></summary><p>可以关注我们的 GitHub 仓库。后续更新日志、部署文档和服务状态都会逐步公开。</p></details>
+        </div>
+      </section>
 
-      <section id="faq" class="section shell faq-section"><div class="section-intro"><p class="eyebrow">03 / FAQ</p><h2>你可能<br /><span>想知道。</span></h2></div><div class="faq-list"><details open><summary>现在可以注册或调用 API 吗？<span>＋</span></summary><p>还不可以。当前页面只是项目介绍和建设进度页，没有开放 API，也不会要求你提交上游密钥。</p></details><details><summary>为什么要先准备域名、VPS 和上游？<span>＋</span></summary><p>域名用于稳定访问，VPS 用于运行服务，合规上游则决定服务是否能够合法、稳定地提供。三者准备好后再进入部署阶段。</p></details><details><summary>项目会支持哪些模型？<span>＋</span></summary><p>暂未确定。最终以获得合法授权、成本可控且稳定可用的供应商为准，不会在授权不明确的情况下提供模型。</p></details><details><summary>如何关注项目进展？<span>＋</span></summary><p>可以通过页面上的 GitHub 链接关注仓库。发布前会补充具体仓库地址、更新日志和服务状态页面。</p></details></div></section>
-
-      <section class="cta-section"><div class="shell cta"><p class="eyebrow">BUILD IN PUBLIC</p><h2>先从透明开始。</h2><p>准备好基础设施后，这个静态站会继续保留，并逐步接入服务状态、文档和 API 使用说明。</p><a class="button button-primary" href="https://github.com/" target="_blank" rel="noreferrer">前往 GitHub <span>↗</span></a></div></section>
+      <section class="cta shell"><img src="apipanda-mark.svg" alt="" /><div><p class="eyebrow">BUILD IN PUBLIC</p><h2>从透明开始，慢慢把它做好。</h2><p>服务上线前，先把每一步准备工作认真完成。</p></div><a class="button primary" href="https://github.com/Henry0620-tuzi/apipanda" target="_blank" rel="noreferrer">关注 GitHub <span>↗</span></a></section>
     </main>
-    <footer class="site-footer shell"><div class="brand"><span class="brand-mark"><i></i><i></i><i></i></span><span>ApiPanda</span></div><p>基于 Sub2API · 公开建设中</p><p>© <span id="year"></span> ApiPanda</p></footer>
+    <footer class="site-footer shell"><a class="brand" href="#top"><img src="apipanda-mark.svg" alt="" /><span>Api<span>Panda</span></span></a><p>基于 Sub2API · 公开建设中</p><p>© <span id="year"></span> ApiPanda</p></footer>
     <script src="script.js"></script>
   </body>
 </html>
