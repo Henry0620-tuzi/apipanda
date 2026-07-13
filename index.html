@@ -17,7 +17,7 @@
     <header class="site-header shell">
       <a class="brand" href="#top" aria-label="ApiPanda 首页"><img src="apipanda-chibi-icon.png?v=20260713-2" alt="" /><span>Api<span>Panda</span></span></a>
       <nav class="nav-links" aria-label="主导航">
-        <a href="#about">项目介绍</a><a href="#features">服务特点</a><a href="#roadmap">建设路线</a><a href="#faq">常见问题</a>
+        <a href="#models">模型与价格</a><a href="#console">控制台</a><a href="#docs">开发文档</a><a href="#roadmap">建设路线</a>
       </nav>
       <a class="header-button" href="https://github.com/Henry0620-tuzi/apipanda" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
       <button class="menu-button" aria-label="打开菜单" aria-expanded="false">☰</button>
@@ -45,6 +45,52 @@
         <article><span class="feature-icon blue">▣</span><div><h3>公开透明</h3><p>建设状态、使用规则和服务变化清晰可见。</p></div></article>
         <article><span class="feature-icon orange">◇</span><div><h3>清晰计量</h3><p>正式开放前明确额度、价格与异常处理。</p></div></article>
         <article><span class="feature-icon purple">♙</span><div><h3>安全合规</h3><p>先确认供应商授权，再开放实际服务。</p></div></article>
+      </section>
+
+      <section id="models" class="product-section shell">
+        <div class="center-heading"><p class="eyebrow">MODEL CATALOG</p><h2>模型与价格中心</h2><p>正式上线后，在一个页面查询可用模型、接口格式、上下文长度和计费方式。当前内容仅为架构预览，不代表已经提供模型。</p></div>
+        <div class="model-toolbar"><div class="fake-search">⌕　搜索模型名称或提供商</div><div class="filter-chips"><span class="active">全部模型</span><span>文本</span><span>图像</span><span>音频</span><span>推理</span></div></div>
+        <div class="model-grid">
+          <article><div class="model-head"><span class="model-logo">A</span><div><h3>OpenAI 兼容模型</h3><p>Chat Completions · Responses</p></div><b>规划中</b></div><div class="model-meta"><span>输入计费</span><span>输出计费</span><span>流式响应</span></div></article>
+          <article><div class="model-head"><span class="model-logo purple">C</span><div><h3>Claude 兼容模型</h3><p>Messages API · Streaming</p></div><b>规划中</b></div><div class="model-meta"><span>长上下文</span><span>缓存计费</span><span>工具调用</span></div></article>
+          <article><div class="model-head"><span class="model-logo blue">G</span><div><h3>Gemini 兼容模型</h3><p>Generate Content · Multimodal</p></div><b>规划中</b></div><div class="model-meta"><span>多模态</span><span>图像输入</span><span>流式响应</span></div></article>
+        </div>
+        <div class="notice-bar"><span>ⓘ</span><p><b>价格公开原则：</b>只有在获得合规上游授权并完成成本核算后，才会公布真实模型与价格；页面将区分输入、输出、缓存、图像、音频和任务计费。</p></div>
+      </section>
+
+      <section id="console" class="console-wrap">
+        <div class="shell console-layout">
+          <div class="section-heading"><p class="eyebrow">USER CONSOLE</p><h2>一个清晰、可控的<br /><span>用户控制台。</span></h2><p>参考成熟 API 网关的功能分区，未来控制台会覆盖账户、密钥、用量、账单和开发测试的完整流程。</p>
+            <div class="module-list"><span>账户总览</span><span>API Key 管理</span><span>调用日志</span><span>余额与账单</span><span>模型广场</span><span>在线调试</span></div>
+          </div>
+          <div class="dashboard-mockup">
+            <aside><div class="mini-brand"><img src="apipanda-chibi-icon.png?v=20260713-2" alt="" /><b>ApiPanda</b></div><nav><span class="active">⌂　总览</span><span>◇　API Key</span><span>▤　调用日志</span><span>◉　模型广场</span><span>▣　账单中心</span><span>⚙　个人设置</span></nav></aside>
+            <div class="dash-main"><header><div><small>控制台预览</small><h3>欢迎回来 👋</h3></div><span class="coming-badge">尚未开放</span></header><div class="metric-row"><article><span>可用余额</span><b>¥ —</b><small>等待计费方案</small></article><article><span>今日请求</span><b>—</b><small>暂无调用数据</small></article><article><span>Token 用量</span><b>—</b><small>暂无调用数据</small></article></div><div class="chart-card"><div><b>近 7 日用量</b><span>按模型 / API Key 筛选</span></div><svg viewBox="0 0 560 150" role="img" aria-label="用量图表示意"><path d="M10 125 C80 110 90 70 150 91 S245 120 290 65 S390 98 430 55 S510 73 550 28" fill="none" stroke="#2d8b52" stroke-width="4"/><path d="M10 125 C80 110 90 70 150 91 S245 120 290 65 S390 98 430 55 S510 73 550 28 L550 145 L10 145Z" fill="url(#area)"/><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#73bd75" stop-opacity=".28"/><stop offset="1" stop-color="#73bd75" stop-opacity="0"/></linearGradient></defs></svg></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="docs" class="section docs-section shell">
+        <div class="section-heading"><p class="eyebrow">DEVELOPER EXPERIENCE</p><h2>从一把密钥开始接入</h2><p>计划同时提供 OpenAI、Claude 与 Gemini 风格的兼容入口，配套快速开始、错误码、限流规则、SDK 示例和服务状态。</p><div class="docs-links"><span>快速开始</span><span>接口参考</span><span>SDK 示例</span><span>错误码</span><span>服务状态</span><span>更新日志</span></div></div>
+        <div class="code-window"><div class="code-top"><span><i></i><i></i><i></i></span><b>OpenAI Compatible</b></div><pre><code><span>curl</span> https://api.example.com/v1/chat/completions \
+  -H <em>"Authorization: Bearer $APIPANDA_KEY"</em> \
+  -H <em>"Content-Type: application/json"</em> \
+  -d '{
+    "model": "your-model",
+    "messages": [
+      {"role": "user", "content": "你好"}
+    ]
+  }'</code></pre><p>示例域名仅作结构展示，正式接口地址将在域名和后端准备完成后公布。</p></div>
+      </section>
+
+      <section class="architecture shell">
+        <div class="center-heading"><p class="eyebrow">PLATFORM ARCHITECTURE</p><h2>完整的 API 站产品架构</h2><p>公开站、用户控制台、开发者工具和运营后台彼此分离，权限和数据边界更清楚。</p></div>
+        <div class="architecture-grid">
+          <article><span>01</span><h3>公开服务门户</h3><p>首页、模型价格、开发文档、公告、状态页、服务条款与隐私政策。</p><div>所有访客可见</div></article>
+          <article><span>02</span><h3>用户控制台</h3><p>注册登录、API Key、额度、调用日志、账单、充值兑换和个人安全设置。</p><div>登录用户可见</div></article>
+          <article><span>03</span><h3>开发者工具</h3><p>在线调试、Playground、请求转换、SDK 示例、Webhook 与开放平台。</p><div>按需逐步开放</div></article>
+          <article><span>04</span><h3>运营管理后台</h3><p>用户、模型、合规渠道、计费策略、风控、日志审计、任务和系统配置。</p><div>仅管理员可见</div></article>
+        </div>
       </section>
 
       <section id="about" class="section shell">
