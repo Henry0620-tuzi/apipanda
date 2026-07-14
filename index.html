@@ -10,16 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260713-2" />
+    <link rel="stylesheet" href="styles.css?v=20260714-1" />
   </head>
   <body>
     <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
     <header class="site-header shell">
       <a class="brand" href="#top" aria-label="ApiPanda 首页"><img src="apipanda-chibi-icon.png?v=20260713-2" alt="" /><span>Api<span>Panda</span></span></a>
       <nav class="nav-links" aria-label="主导航">
-        <a href="console.html">控制台</a><a href="#models">模型广场</a><a href="#docs">开发文档</a><a href="#roadmap">建设路线</a>
+        <a href="#top" data-i18n="home">首页</a><a href="console.html" data-i18n="console">控制台</a><a href="#models" data-i18n="models">模型广场</a><a href="#docs" data-i18n="docs">开发文档</a><a href="#roadmap" data-i18n="roadmap">建设路线</a>
       </nav>
-      <a class="header-button" href="https://github.com/Henry0620-tuzi/apipanda" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+      <div class="header-tools">
+        <div class="tool-menu"><button class="tool-trigger node-trigger" aria-expanded="false"><i class="live-dot"></i><span class="node-name">自动节点</span><b>⌄</b></button><div class="tool-popover node-popover"><strong>节点切换</strong><p>选择访问延迟更低的服务节点</p><button class="choice active" data-node="自动节点"><span><i></i>自动选择<small>推荐 · 根据延迟切换</small></span><b>✓</b></button><button class="choice" data-node="亚太节点"><span><i></i>亚太节点<small>规划中</small></span></button><button class="choice" data-node="全球节点"><span><i></i>全球节点<small>规划中</small></span></button></div></div>
+        <div class="tool-menu"><button class="icon-trigger notice-trigger" aria-label="系统通知" aria-expanded="false">♢<i class="notice-dot"></i></button><div class="tool-popover notice-popover"><div class="popover-head"><strong>系统通知</strong><button class="read-all">全部已读</button></div><article class="unread"><i></i><div><b>静态控制台已更新</b><p>新增订单中心、使用日志和等级权益。</p><time>刚刚</time></div></article><article><i></i><div><b>API 服务尚未开放</b><p>请勿提交密钥或进行充值操作。</p><time>项目公告</time></div></article><a href="#roadmap">查看全部通知 →</a></div></div>
+        <div class="tool-menu"><button class="icon-trigger theme-trigger" aria-label="模式切换" aria-expanded="false"><span class="theme-icon">☼</span></button><div class="tool-popover compact-popover theme-popover"><strong>显示模式</strong><button class="theme-choice active" data-theme="light"><i>☼</i><span>浅色模式</span><b>✓</b></button><button class="theme-choice" data-theme="dark"><i>☾</i><span>深色模式</span></button><button class="theme-choice" data-theme="system"><i>◐</i><span>跟随系统</span></button></div></div>
+        <div class="tool-menu"><button class="icon-trigger language-trigger" aria-label="语言切换" aria-expanded="false"><span>文</span></button><div class="tool-popover compact-popover language-popover"><strong>界面语言</strong><button class="language-choice active" data-lang="zh"><span>简体中文</span><b>✓</b></button><button class="language-choice" data-lang="en"><span>English</span></button><button class="language-choice" data-lang="ja"><span>日本語</span></button><button class="language-choice" data-lang="ko"><span>한국어</span></button></div></div>
+        <div class="tool-menu user-tool"><button class="user-trigger" aria-expanded="false"><img src="apipanda-chibi-icon.png?v=20260713-2" alt="" /><span>访客<small>未登录</small></span><b>⌄</b></button><div class="tool-popover user-popover"><div class="user-card"><img src="apipanda-chibi-icon.png?v=20260713-2" alt="" /><div><b>访客用户</b><span>登录后管理账户</span></div></div><a href="console.html">进入控制台</a><a href="console.html">API Key 管理</a><a href="console.html">订单与账单</a><hr/><button class="login-button">登录 / 注册</button></div></div>
+      </div>
       <button class="menu-button" aria-label="打开菜单" aria-expanded="false">☰</button>
     </header>
 
@@ -125,6 +131,6 @@
       <section class="cta shell"><img src="apipanda-chibi-icon.png?v=20260713-2" alt="" /><div><p class="eyebrow">BUILD IN PUBLIC</p><h2>从透明开始，慢慢把它做好。</h2><p>服务上线前，先把每一步准备工作认真完成。</p></div><a class="button primary" href="https://github.com/Henry0620-tuzi/apipanda" target="_blank" rel="noreferrer">关注 GitHub <span>↗</span></a></section>
     </main>
     <footer class="site-footer shell"><a class="brand" href="#top"><img src="apipanda-chibi-icon.png?v=20260713-2" alt="" /><span>Api<span>Panda</span></span></a><p>基于 Sub2API · 公开建设中</p><p>© <span id="year"></span> ApiPanda</p></footer>
-    <script src="script.js?v=20260713-2"></script>
+    <script src="script.js?v=20260714-1"></script>
   </body>
 </html>
